@@ -104,7 +104,7 @@ hidden;cursor: pointer;width: 20%;height: 20%;background: rgba(128, 128, 128,
 <h1 id="chrome-">Chrome 扩展开发入门到上架</h1>
 <p><a href="https://github.com/meowtec">https://github.com/meowtec</a></p>
 <h1 id="-">关于作者</h1>
-<p>多年前开始开发 Chrome 扩展，上架扩展有：</p>
+<p>开发 Chrome 扩展多年，上架扩展有：</p>
 <ul>
 <li><a href="https://github.com/meowtec/Owl-redirector">Owl-redirector</a> 强大的请求重定向扩展</li>
 <li><a href="https://github.com/meowtec/chrome-menufish">menufish</a> 可自定义的右键搜索、分享扩展</li>
@@ -186,7 +186,7 @@ console.<span class="hljs-function"><span class="hljs-title">log</span><span cla
 <p>进行如下操作：</p>
 <ol>
 <li>修改 <code>content.js</code>，添加 <code>window.testExtVar = 123;</code></li>
-<li>打开开发者工具，直接在 <strong>Console</strong> 中执行 <code>console.log(window.testExtVar)</code> </li>
+<li>打开开发者工具，直接在 <strong>Console</strong> 中执行 <code>console.log(window.testExtVar)</code></li>
 </ol>
 <p><strong>结果是什么？为什么？</strong></p>
 <h1 id="content-script-">Content script 进阶</h1>
@@ -247,7 +247,7 @@ console.<span class="hljs-function"><span class="hljs-title">log</span><span cla
 <p>在 <code>chrome://extensions</code> 点击 <strong>检查视图：背景页</strong> 进行调试</p>
 <h2 id="event-pages">Event Pages</h2>
 <ul>
-<li><p><em>Event Pages</em> 是特殊的 <em>background Pages</em> </p>
+<li><p><em>Event Pages</em> 是特殊的 <em>background Pages</em></p>
 </li>
 <li><p><em>Background Pages</em> 持续运行于后台，Chrome 退出才会卸载</p>
 </li>
@@ -262,7 +262,7 @@ console.<span class="hljs-function"><span class="hljs-title">log</span><span cla
 </ul>
 <p>提示：</p>
 <ul>
-<li>在背景页中使用 <code>chrome.contextMenus.create API</code> </li>
+<li>在背景页中使用 <code>chrome.contextMenus.create API</code></li>
 <li>二维码生成器: <a href="https://meowtec.github.io/chrome-extension-dev-guide/qrcode">https://meowtec.github.io/chrome-extension-dev-guide/qrcode</a></li>
 </ul>
 <h1 id="chrome-api">chrome.* API</h1>
@@ -333,7 +333,7 @@ console.<span class="hljs-function"><span class="hljs-title">log</span><span cla
 </code></pre><h2 id="localstorage-in-content-script">localStorage in Content script</h2>
 <ul>
 <li>Content script 访问的是<strong>宿主网页</strong>的 localStorage.</li>
-<li>背景页、选项页访问的则是<strong>扩展</strong>的 localStorage. </li>
+<li>背景页、选项页访问的则是<strong>扩展</strong>的 localStorage.</li>
 </ul>
 <p>这就为数据的存储和读取带来了麻烦。</p>
 <h2 id="chrome-storage">chrome.storage</h2>

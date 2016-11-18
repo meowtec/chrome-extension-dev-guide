@@ -6,7 +6,7 @@ https://github.com/meowtec
 
 # 关于作者
 
-多年前开始开发 Chrome 扩展，上架扩展有：
+开发 Chrome 扩展多年，上架扩展有：
 
 - [Owl-redirector](https://github.com/meowtec/Owl-redirector) 强大的请求重定向扩展
 - [menufish](https://github.com/meowtec/chrome-menufish) 可自定义的右键搜索、分享扩展
@@ -19,7 +19,7 @@ Chrome 扩展是指使用 JavaScript 等网页技术开发的，用来扩展 Chr
 
 
 
-# 学会开发扩展的好处 
+# 学会开发扩展的好处
 
 - 提高工作效率
 - 网页内容自己做主
@@ -141,7 +141,7 @@ console.log(1)
 进行如下操作：
 
 1. 修改 `content.js`，添加 `window.testExtVar = 123;`
-2. 打开开发者工具，直接在 **Console** 中执行 `console.log(window.testExtVar)` 
+2. 打开开发者工具，直接在 **Console** 中执行 `console.log(window.testExtVar)`
 
 **结果是什么？为什么？**
 
@@ -257,7 +257,7 @@ Content script 的应用**十分广泛**，各种优化网页内容，修改页�
 
 ## Event Pages
 
-- *Event Pages* 是特殊的 *background Pages* 
+- *Event Pages* 是特殊的 *background Pages*
 
 * *Background Pages* 持续运行于后台，Chrome 退出才会卸载
 * *Event Pages* 在「需要时」才加载，在事件队列为空时卸载
@@ -275,7 +275,7 @@ Content script 的应用**十分广泛**，各种优化网页内容，修改页�
 
 提示：
 
-- 在背景页中使用 `chrome.contextMenus.create API` 
+- 在背景页中使用 `chrome.contextMenus.create API`
 - 二维码生成器: https://meowtec.github.io/chrome-extension-dev-guide/qrcode
 
 
@@ -402,7 +402,7 @@ console.log(localStorage)
 ## localStorage in Content script
 
 - Content script 访问的是**宿主网页**的 localStorage.
-- 背景页、选项页访问的则是**扩展**的 localStorage. 
+- 背景页、选项页访问的则是**扩展**的 localStorage.
 
 
 

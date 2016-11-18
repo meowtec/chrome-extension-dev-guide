@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QRCode</title>
+  <style>
+    body {
+      margin: 0;
+    }
+    #qrcode img {
+      width: 300px;
+      height: 300px;
+      margin: 20px auto;
+      image-rendering: pixelated;
+    }
+  </style>
+</head>
+<body>
+<div id="qrcode"></div>
+<script src="qrcode.min.js"></script>
+<script>
+/*
+usage:
+
+window.open(
+  'http://path/to/qrcode/?url=encodeURIComponentU',
+  '',
+  'width=340,height=360,left=500,top=200'
+)
+*/
+
+function queryParse(url) {
+  let qs = {}
+  url.replace(/([^?=&]+)(=([^&]*))?/g, ($0, $1, $2, $3) => {
+    if ($3 === undefined) {
+      return
+    }
+    qs[$1] = decodeURIComponent($3)
+  })
+  return qs
+}
+
+const qs = queryParse(location.href)
+const url = qs.url
+const img = document.getElementById("qrcode")
+new QRCode(img, url)
+</script>
+</body>
+</html>

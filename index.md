@@ -276,8 +276,7 @@ Content script 的应用**十分广泛**，各种优化网页内容，修改页�
 提示：
 
 - 在背景页中使用 `chrome.contextMenus.create API` 
-- 二维码生成器直接使用[todo](todo)
-
+- 二维码生成器: https://meowtec.github.io/chrome-extension-dev-guide/qrcode
 
 
 # chrome.* API
